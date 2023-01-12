@@ -243,9 +243,13 @@
             <div class="row">
               <div class="card d-flex">
                 <form class="card-body">
+                  <div class="alert alert-danger" role="alert">
+                    stess
+                  </div>
                   <!-- Text input -->
                   <div class="form-outline mb-4">
-                    <input type="text" id="Title" class="form-control" />
+                    <input type="text" id="Title" class="form-control" value="dasda" disabled />
+                    <input type="hidden" name="idcontent" value="testet">
                     <label class="form-label" for="Title">Title</label>
                   </div>
                   <!-- Message input -->
@@ -254,14 +258,15 @@
                       class="form-control"
                       id="Description"
                       rows="4"
+                      
                     ></textarea>
                     <label class="form-label" for="Description"
                       >Email body content for E-Statement
                     </label>
                   </div>
                   <div class="form mb-4">
-                    <label class="form-label" for="customFile"></label>
-                    <input type="file" class="form-control" id="customFile" />
+                    <label class="form-label"  for="customFile">Existing File: </label>
+                    <input type="file" class="form-control"  id="customFile" />
                   </div>
                   <!-- Submit button -->
                   <button

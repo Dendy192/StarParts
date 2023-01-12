@@ -26,9 +26,13 @@ $(document).ready(function () {
     });
 });
 
+// $(document).ready(function () {
+//     $('#customerTable').DataTable({
+//     
+//         pagingType: 'full_numbers',
+//     });
+// });
+
 $(document).ready(function () {
-    $('#customerTable').DataTable({
-        select: true,
-        pagingType: 'full_numbers',
-    });
+    $('#customerTable').DataTable();
 });

@@ -18,12 +18,16 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
     <!-- MDB -->
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.foundation.min.css"> -->
+
     <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css"> -->
     <!-- <link rel="stylesheet" href="css/mdb.dark.min.css" /> -->
     <link rel="stylesheet" href="css/mdb.min.css" />
 </head>
+
 
 <body class="sb-nav-fixed" style="
       /* padding-left: 10px; */
@@ -157,35 +161,39 @@
 
                                 <div class="card-body">
                                     <!-- <div class="row"> -->
-                                        <form action="">
+                                    <form action="">
 
 
-                                            <div class="table-responsive">
+                                        <div class="table-responsive">
+                                            <!-- class="table table-striped" -->
+                                            <!-- class="display" style="width:100%" -->
+                                            <table class="table table-striped" id="customerTable">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="tg-0lax">No</th>
+                                                        <th class="tg-0lax">Name</th>
+                                                        <th class="tg-0lax">Phone</th>
+                                                        <th class="tg-0lax">Email</th>
+                                                        <th class="tg-0lax">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class='tg-0lax'>samlekum</td>
+                                                        <td class='tg-0lax'>samlekum</td>
+                                                        <td class='tg-0lax'>samlekum</td>
+                                                        <td class='tg-0lax'>
+                                                            <div data-id="tes124">test</div>
+                                                        </td>
+                                                        <td class='tg-0lax'><i class='test fas fa-user-edit'
+                                                                data-mdb-toggle="modal" data-mdb-target="#exampleModal"
+                                                                data-id="tes123"></i></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
 
-
-                                                <table class="table table-borderless" id="customerTable">
-                                                    <thead>
-                                                        <tr>
-                                                            <th class="tg-0lax">No/th>
-                                                            <th class="tg-0lax">Name</th>
-                                                            <th class="tg-0lax">Phone</th>
-                                                            <th class="tg-0lax">Email</th>
-                                                            <th class="tg-0lax">Action</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                           <td class='tg-0lax'>samlekum</td>
-                                                           <td class='tg-0lax'>samlekum</td>
-                                                           <td class='tg-0lax'>samlekum</td>
-                                                           <td class='tg-0lax'>samlekum</td>
-                                                           <td class='tg-0lax'>samlekum</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-
-                                            </div>
-                                        </form>
+                                        </div>
+                                    </form>
                                     <!-- </div> -->
                                     <!-- <div class="row"> </div> -->
                                     <!-- <canvas id="myAreaChart" width="100%" height=""></canvas> -->
@@ -193,12 +201,39 @@
                             </div>
 
                         </div>
-                        
-                        
-                        
+
+
+
 
                     </div>
                 </div>
+                <!-- <button type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal"> -->
+                <!-- Launch demo modal
+                  </button> -->
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-mdb-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body ">
+                                <input type="text" name="test" id="test" value="">
+                                <input type="text" name="test23" id="test23" value="">
+                                <!-- <input type="text" name="test" id="test" value=""> -->
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </main>
             <!-- <footer class="py-4 bg-light mt-auto"> -->
             <div class="container-fluid px-4">
@@ -228,7 +263,7 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
 
     <!-- Custom scripts -->
-    <script type="text/javascript"></script>
+    <script type="text/javascript" src="js/test.js"></script>
     <script type="text/javascript" src="js/search.js"></script>
 </body>
 
